@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC03266B1A78153200EA346F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03266A1A78153200EA346F /* AppDelegate.swift */; };
+		EC03266D1A78153200EA346F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03266C1A78153200EA346F /* ViewController.swift */; };
+		EC0326701A78153200EA346F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC03266E1A78153200EA346F /* Main.storyboard */; };
+		EC0326721A78153200EA346F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0326711A78153200EA346F /* Images.xcassets */; };
+		EC0326751A78153200EA346F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0326731A78153200EA346F /* LaunchScreen.xib */; };
+		EC0326811A78153300EA346F /* AstronomyPictureOfTheDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0326801A78153300EA346F /* AstronomyPictureOfTheDayTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC03267B1A78153300EA346F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC03265D1A78153200EA346F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0326641A78153200EA346F;
+			remoteInfo = AstronomyPictureOfTheDay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC0326651A78153200EA346F /* AstronomyPictureOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPictureOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0326691A78153200EA346F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC03266A1A78153200EA346F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC03266C1A78153200EA346F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC03266F1A78153200EA346F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC0326711A78153200EA346F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC0326741A78153200EA346F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EC03267A1A78153300EA346F /* AstronomyPictureOfTheDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyPictureOfTheDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC03267F1A78153300EA346F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0326801A78153300EA346F /* AstronomyPictureOfTheDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureOfTheDayTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC0326621A78153200EA346F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0326771A78153300EA346F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC03265C1A78153200EA346F = {
+			isa = PBXGroup;
+			children = (
+				EC0326671A78153200EA346F /* AstronomyPictureOfTheDay */,
+				EC03267D1A78153300EA346F /* AstronomyPictureOfTheDayTests */,
+				EC0326661A78153200EA346F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC0326661A78153200EA346F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC0326651A78153200EA346F /* AstronomyPictureOfTheDay.app */,
+				EC03267A1A78153300EA346F /* AstronomyPictureOfTheDayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC0326671A78153200EA346F /* AstronomyPictureOfTheDay */ = {
+			isa = PBXGroup;
+			children = (
+				EC03266A1A78153200EA346F /* AppDelegate.swift */,
+				EC03266C1A78153200EA346F /* ViewController.swift */,
+				EC03266E1A78153200EA346F /* Main.storyboard */,
+				EC0326711A78153200EA346F /* Images.xcassets */,
+				EC0326731A78153200EA346F /* LaunchScreen.xib */,
+				EC0326681A78153200EA346F /* Supporting Files */,
+			);
+			path = AstronomyPictureOfTheDay;
+			sourceTree = "<group>";
+		};
+		EC0326681A78153200EA346F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC0326691A78153200EA346F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC03267D1A78153300EA346F /* AstronomyPictureOfTheDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC0326801A78153300EA346F /* AstronomyPictureOfTheDayTests.swift */,
+				EC03267E1A78153300EA346F /* Supporting Files */,
+			);
+			path = AstronomyPictureOfTheDayTests;
+			sourceTree = "<group>";
+		};
+		EC03267E1A78153300EA346F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC03267F1A78153300EA346F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC0326641A78153200EA346F /* AstronomyPictureOfTheDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0326841A78153300EA346F /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDay" */;
+			buildPhases = (
+				EC0326611A78153200EA346F /* Sources */,
+				EC0326621A78153200EA346F /* Frameworks */,
+				EC0326631A78153200EA346F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstronomyPictureOfTheDay;
+			productName = AstronomyPictureOfTheDay;
+			productReference = EC0326651A78153200EA346F /* AstronomyPictureOfTheDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC0326791A78153300EA346F /* AstronomyPictureOfTheDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0326871A78153300EA346F /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayTests" */;
+			buildPhases = (
+				EC0326761A78153300EA346F /* Sources */,
+				EC0326771A78153300EA346F /* Frameworks */,
+				EC0326781A78153300EA346F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC03267C1A78153300EA346F /* PBXTargetDependency */,
+			);
+			name = AstronomyPictureOfTheDayTests;
+			productName = AstronomyPictureOfTheDayTests;
+			productReference = EC03267A1A78153300EA346F /* AstronomyPictureOfTheDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC03265D1A78153200EA346F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = hakonbogen;
+				TargetAttributes = {
+					EC0326641A78153200EA346F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					EC0326791A78153300EA346F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EC0326641A78153200EA346F;
+					};
+				};
+			};
+			buildConfigurationList = EC0326601A78153200EA346F /* Build configuration list for PBXProject "AstronomyPictureOfTheDay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC03265C1A78153200EA346F;
+			productRefGroup = EC0326661A78153200EA346F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC0326641A78153200EA346F /* AstronomyPictureOfTheDay */,
+				EC0326791A78153300EA346F /* AstronomyPictureOfTheDayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC0326631A78153200EA346F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0326701A78153200EA346F /* Main.storyboard in Resources */,
+				EC0326751A78153200EA346F /* LaunchScreen.xib in Resources */,
+				EC0326721A78153200EA346F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0326781A78153300EA346F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC0326611A78153200EA346F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC03266D1A78153200EA346F /* ViewController.swift in Sources */,
+				EC03266B1A78153200EA346F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0326761A78153300EA346F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0326811A78153300EA346F /* AstronomyPictureOfTheDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC03267C1A78153300EA346F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0326641A78153200EA346F /* AstronomyPictureOfTheDay */;
+			targetProxy = EC03267B1A78153300EA346F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC03266E1A78153200EA346F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC03266F1A78153200EA346F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC0326731A78153200EA346F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC0326741A78153200EA346F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC0326821A78153300EA346F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC0326831A78153300EA346F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC0326851A78153300EA346F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC0326861A78153300EA346F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC0326881A78153300EA346F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AstronomyPictureOfTheDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPictureOfTheDay.app/AstronomyPictureOfTheDay";
+			};
+			name = Debug;
+		};
+		EC0326891A78153300EA346F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AstronomyPictureOfTheDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPictureOfTheDay.app/AstronomyPictureOfTheDay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC0326601A78153200EA346F /* Build configuration list for PBXProject "AstronomyPictureOfTheDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0326821A78153300EA346F /* Debug */,
+				EC0326831A78153300EA346F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0326841A78153300EA346F /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0326851A78153300EA346F /* Debug */,
+				EC0326861A78153300EA346F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC0326871A78153300EA346F /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0326881A78153300EA346F /* Debug */,
+				EC0326891A78153300EA346F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC03265D1A78153200EA346F /* Project object */;
+}
