@@ -66,8 +66,6 @@ class PictureImporter: NSObject {
         let signal = signalForUrlRequest(url,startImmediately: startImmediately).map { (responseData) -> AnyObject! in
             let parsedHTML = NSString(data: responseData as NSData, encoding: NSASCIIStringEncoding) as String
 //            
-//            let pictureURL = result.pictureUrlFromNASAHtmlContent()
-//            let description = result.descriptionFromNASAHTMLContent()
 //            let astronomyItem = AstronomyItem(date: date, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
             let astronomyItem = AstronomyItem(date: date, sourceHTML: parsedHTML, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
             

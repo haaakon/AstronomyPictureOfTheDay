@@ -6,9 +6,10 @@
         <attribute name="descriptionText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="originalImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="originalImageURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AstronomyItem" positionX="-54" positionY="-9" width="128" height="133"/>
+        <element name="AstronomyItem" positionX="-54" positionY="-9" width="128" height="148"/>
     </elements>
 </model>

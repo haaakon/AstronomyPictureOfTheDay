@@ -34,7 +34,7 @@ extension String {
     }
     
     func descriptionFromNASAHTMLContent() -> String {
-        let regex = NSRegularExpression(pattern: "Explanation:\\s((?:[^;])+)Tomorrow's", options: .CaseInsensitive, error: nil)
+        let regex = NSRegularExpression(pattern: "ion:\\s((?:[^;])+)Tomorrow's", options: .CaseInsensitive, error: nil)
         let matches: NSArray! = regex!.matchesInString(self, options: nil, range: NSMakeRange(0, self.utf16Count))
         var description = ""
         regex!.enumerateMatchesInString(self, options: nil, range: NSMakeRange(0, self.utf16Count)) { (result : NSTextCheckingResult! , flags: NSMatchingFlags, pointer: UnsafeMutablePointer) -> Void in

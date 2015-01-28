@@ -43,16 +43,17 @@ class AstronomyPictureOfTheDayTests: XCTestCase {
         return data!
     }
    
-
     func testParseFrontPage() {
-        let signal = PictureImporter.importAstronomyPhotoMetaData(date: NSDate(), startImmediately: true)
+        let date = NSDate()
+        let signal = PictureImporter.importAstronomyPhotoMetaData(date: date, startImmediately: true)
         let htmlContent = dataFromFile("exampleFrontPage.html")
         signal.subscribeNext { (response) -> Void in
             let astronomyItem = response as AstronomyItem
             XCTAssertNotNil(astronomyItem, "could not create astronomy item from date and html")
+            XCTAssertEqual(date, astronomyItem.date, "dates created and fetched was not equal")
+            XCTAssertEqual(astronomyItem.originalImageURL, "http://apod.nasa.gov/apod/image/1501/GalacticMagneticField_planck_3197.jpg", "")
         }
         PictureImporter.sharedPictureImporter.subscriber?.sendNext(htmlContent)
-        
     }
     
 }

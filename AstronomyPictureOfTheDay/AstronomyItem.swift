@@ -17,10 +17,12 @@ class AstronomyItem: NSManagedObject {
     @NSManaged var descriptionText: String
     @NSManaged var date: NSDate
     @NSManaged var originalImage: NSData
+    @NSManaged var originalImageURL : String
     
     convenience init(date: NSDate, sourceHTML: String, managedObjectContext: NSManagedObjectContext) {
-        
         self.init(date:date, managedObjectContext: managedObjectContext)
+        originalImageURL = sourceHTML.pictureUrlFromNASAHtmlContent()!.absoluteString!
+        self.descriptionText = sourceHTML.descriptionFromNASAHTMLContent()
         
     }
     
