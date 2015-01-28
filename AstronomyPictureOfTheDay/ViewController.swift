@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        PictureImporter.importAstronomyPhotos(Constants.API.nasaBaseURL, startNow: true).subscribeNext { (stuff) -> Void in
+            println(stuff)
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

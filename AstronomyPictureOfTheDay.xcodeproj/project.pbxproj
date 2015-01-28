@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10BCC48B219D3A1E78A238C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D495E3F6D5A408CBB62E3172 /* libPods.a */; };
+		1B5993C93EEAE8B1C0C44294 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D495E3F6D5A408CBB62E3172 /* libPods.a */; };
 		EC03266B1A78153200EA346F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03266A1A78153200EA346F /* AppDelegate.swift */; };
 		EC03266D1A78153200EA346F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03266C1A78153200EA346F /* ViewController.swift */; };
 		EC0326701A78153200EA346F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC03266E1A78153200EA346F /* Main.storyboard */; };
 		EC0326721A78153200EA346F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0326711A78153200EA346F /* Images.xcassets */; };
 		EC0326751A78153200EA346F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0326731A78153200EA346F /* LaunchScreen.xib */; };
 		EC0326811A78153300EA346F /* AstronomyPictureOfTheDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0326801A78153300EA346F /* AstronomyPictureOfTheDayTests.swift */; };
+		EC03268B1A7815DF00EA346F /* PictureImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03268A1A7815DF00EA346F /* PictureImporter.swift */; };
+		EC0326901A781A5700EA346F /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = EC03268F1A781A5700EA346F /* test.m */; };
+		EC84D5E41A783B4F0083E6CF /* PictureImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03268A1A7815DF00EA346F /* PictureImporter.swift */; };
+		EC8C12F91A78293F00665A3E /* String+HTMLParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */; };
+		EC8C12FA1A78293F00665A3E /* String+HTMLParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */; };
+		EC8C12FC1A78325B00665A3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C12FB1A78325B00665A3E /* Constants.swift */; };
+		EC8C12FD1A78325B00665A3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C12FB1A78325B00665A3E /* Constants.swift */; };
+		EC8C12FF1A7836FE00665A3E /* exampleFrontPage.html in Resources */ = {isa = PBXBuildFile; fileRef = EC8C12FE1A7836FE00665A3E /* exampleFrontPage.html */; };
+		EC8C13001A7836FE00665A3E /* exampleFrontPage.html in Resources */ = {isa = PBXBuildFile; fileRef = EC8C12FE1A7836FE00665A3E /* exampleFrontPage.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4EF38C62B486D58919CF11DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9C4BBDCF52D5E35FE3043C59 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D495E3F6D5A408CBB62E3172 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0326651A78153200EA346F /* AstronomyPictureOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPictureOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0326691A78153200EA346F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC03266A1A78153200EA346F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +50,14 @@
 		EC03267A1A78153300EA346F /* AstronomyPictureOfTheDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyPictureOfTheDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC03267F1A78153300EA346F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0326801A78153300EA346F /* AstronomyPictureOfTheDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureOfTheDayTests.swift; sourceTree = "<group>"; };
+		EC03268A1A7815DF00EA346F /* PictureImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureImporter.swift; sourceTree = "<group>"; };
+		EC03268D1A781A5700EA346F /* AstronomyPictureOfTheDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AstronomyPictureOfTheDay-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC03268E1A781A5700EA346F /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		EC03268F1A781A5700EA346F /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		EC8C12F71A78293E00665A3E /* AstronomyPictureOfTheDayTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AstronomyPictureOfTheDayTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HTMLParsing.swift"; sourceTree = "<group>"; };
+		EC8C12FB1A78325B00665A3E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC8C12FE1A7836FE00665A3E /* exampleFrontPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = exampleFrontPage.html; path = ../AstronomyPictureOfTheDay/exampleFrontPage.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BCC48B219D3A1E78A238C8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +73,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5993C93EEAE8B1C0C44294 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1878AE3D89A59874558FCAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EF38C62B486D58919CF11DF /* Pods.debug.xcconfig */,
+				9C4BBDCF52D5E35FE3043C59 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C54D14E5B8A938B0884340DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D495E3F6D5A408CBB62E3172 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC03265C1A78153200EA346F = {
 			isa = PBXGroup;
 			children = (
 				EC0326671A78153200EA346F /* AstronomyPictureOfTheDay */,
 				EC03267D1A78153300EA346F /* AstronomyPictureOfTheDayTests */,
 				EC0326661A78153200EA346F /* Products */,
+				A1878AE3D89A59874558FCAB /* Pods */,
+				C54D14E5B8A938B0884340DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +122,17 @@
 			children = (
 				EC03266A1A78153200EA346F /* AppDelegate.swift */,
 				EC03266C1A78153200EA346F /* ViewController.swift */,
+				EC8C12FB1A78325B00665A3E /* Constants.swift */,
+				EC03268A1A7815DF00EA346F /* PictureImporter.swift */,
+				EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */,
 				EC03266E1A78153200EA346F /* Main.storyboard */,
+				EC03268E1A781A5700EA346F /* test.h */,
+				EC03268F1A781A5700EA346F /* test.m */,
 				EC0326711A78153200EA346F /* Images.xcassets */,
 				EC0326731A78153200EA346F /* LaunchScreen.xib */,
 				EC0326681A78153200EA346F /* Supporting Files */,
+				EC03268D1A781A5700EA346F /* AstronomyPictureOfTheDay-Bridging-Header.h */,
+				EC8C12F71A78293E00665A3E /* AstronomyPictureOfTheDayTests-Bridging-Header.h */,
 			);
 			path = AstronomyPictureOfTheDay;
 			sourceTree = "<group>";
@@ -99,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0326801A78153300EA346F /* AstronomyPictureOfTheDayTests.swift */,
+				EC8C12FE1A7836FE00665A3E /* exampleFrontPage.html */,
 				EC03267E1A78153300EA346F /* Supporting Files */,
 			);
 			path = AstronomyPictureOfTheDayTests;
@@ -119,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC0326841A78153300EA346F /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDay" */;
 			buildPhases = (
+				C37B2AF6C2B3FAF273E08D72 /* Check Pods Manifest.lock */,
 				EC0326611A78153200EA346F /* Sources */,
 				EC0326621A78153200EA346F /* Frameworks */,
 				EC0326631A78153200EA346F /* Resources */,
+				1CB008669AC503D0DC4AF641 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC0326871A78153300EA346F /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayTests" */;
 			buildPhases = (
+				13D58C6674B8B92314AA0642 /* Check Pods Manifest.lock */,
 				EC0326761A78153300EA346F /* Sources */,
 				EC0326771A78153300EA346F /* Frameworks */,
 				EC0326781A78153300EA346F /* Resources */,
+				50E08CA7DDFE9B62B467A917 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,7 +219,6 @@
 					};
 					EC0326791A78153300EA346F = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = EC0326641A78153200EA346F;
 					};
 				};
 			};
@@ -194,6 +248,7 @@
 			files = (
 				EC0326701A78153200EA346F /* Main.storyboard in Resources */,
 				EC0326751A78153200EA346F /* LaunchScreen.xib in Resources */,
+				EC8C12FF1A7836FE00665A3E /* exampleFrontPage.html in Resources */,
 				EC0326721A78153200EA346F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,10 +257,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8C13001A7836FE00665A3E /* exampleFrontPage.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D58C6674B8B92314AA0642 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1CB008669AC503D0DC4AF641 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E08CA7DDFE9B62B467A917 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C37B2AF6C2B3FAF273E08D72 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC0326611A78153200EA346F /* Sources */ = {
@@ -213,7 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC03266D1A78153200EA346F /* ViewController.swift in Sources */,
+				EC0326901A781A5700EA346F /* test.m in Sources */,
+				EC8C12F91A78293F00665A3E /* String+HTMLParsing.swift in Sources */,
+				EC03268B1A7815DF00EA346F /* PictureImporter.swift in Sources */,
 				EC03266B1A78153200EA346F /* AppDelegate.swift in Sources */,
+				EC8C12FC1A78325B00665A3E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8C12FA1A78293F00665A3E /* String+HTMLParsing.swift in Sources */,
 				EC0326811A78153300EA346F /* AstronomyPictureOfTheDayTests.swift in Sources */,
+				EC84D5E41A783B4F0083E6CF /* PictureImporter.swift in Sources */,
+				EC8C12FD1A78325B00665A3E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +419,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +456,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -336,28 +464,40 @@
 		};
 		EC0326851A78153300EA346F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF38C62B486D58919CF11DF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = astronomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPictureOfTheDay/AstronomyPictureOfTheDay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EC0326861A78153300EA346F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4BBDCF52D5E35FE3043C59 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = astronomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPictureOfTheDay/AstronomyPictureOfTheDay-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		EC0326881A78153300EA346F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF38C62B486D58919CF11DF /* Pods.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -369,14 +509,16 @@
 				INFOPLIST_FILE = AstronomyPictureOfTheDayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPictureOfTheDay.app/AstronomyPictureOfTheDay";
+				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPictureOfTheDay/AstronomyPictureOfTheDayTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EC0326891A78153300EA346F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4BBDCF52D5E35FE3043C59 /* Pods.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -384,7 +526,7 @@
 				INFOPLIST_FILE = AstronomyPictureOfTheDayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPictureOfTheDay.app/AstronomyPictureOfTheDay";
+				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPictureOfTheDay/AstronomyPictureOfTheDayTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +549,7 @@
 				EC0326861A78153300EA346F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC0326871A78153300EA346F /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +558,7 @@
 				EC0326891A78153300EA346F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

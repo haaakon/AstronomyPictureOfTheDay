@@ -1,0 +1,19 @@
+PODS:
+  - OCMock (3.1.2)
+  - ReactiveCocoa (2.4.4):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.4.4):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.4)
+  - ReactiveCocoa/UI (2.4.4):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - OCMock (~> 3.1.2)
+  - ReactiveCocoa (~> 2.4.4)
+
+SPEC CHECKSUMS:
+  OCMock: ecdd510b73ef397f2f97274785c1e87fd147c49f
+  ReactiveCocoa: 31119068e3dde866bd257cf74e1f06b4023bf387
+
+COCOAPODS: 0.34.4
