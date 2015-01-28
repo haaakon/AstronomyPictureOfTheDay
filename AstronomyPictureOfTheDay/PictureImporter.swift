@@ -29,11 +29,10 @@ class PictureImporter: NSObject {
     var subscriber : RACSubscriber?
     
     
-    class func signalForUrlRequest(url: NSURL, startNow: Bool) -> RACSignal {
+    class func signalForUrlRequest(url: NSURL, startImmediately: Bool) -> RACSignal {
         let signal = RACSignal.createSignal { (subscriber) -> RACDisposable! in
             PictureImporter.sharedPictureImporter.subscriber = subscriber
             let fetchAstronomyPageRequest = NSURLRequest(URL: url)
-            println("HELO WRODL");
             let task = PictureImporter.sharedSession.dataTaskWithRequest(fetchAstronomyPageRequest, completionHandler: { (data, response, error) -> Void in
                 if let actualError = error {
                     subscriber.sendError(actualError)
@@ -41,9 +40,8 @@ class PictureImporter: NSObject {
                     subscriber.sendNext(data)
                 }
             })
-            if (startNow) {
+            if (startImmediately) {
                 task.resume()
-                println("start task")
             }
             
             return RACDisposable(  {
@@ -53,31 +51,22 @@ class PictureImporter: NSObject {
         return signal
     }
     
-    class func importAstronomyPhotos(url: NSURL, startNow: Bool) -> RACSignal {
-       let signal = signalForUrlRequest(url,startNow: startNow).map { (responseData) -> AnyObject! in
-        println(responseData)
+    /**
+    parses HTML and creates models based on the data
+    
+    :param: url              url to fetch html from
+    :param: startImmediately whether to do task.resume right away
+    
+    :returns: signal with models
+    */
+    class func importAstronomyPhotoMetaData(url: NSURL, startImmediately: Bool) -> RACSignal {
+       let signal = signalForUrlRequest(url,startImmediately: startImmediately).map { (responseData) -> AnyObject! in
         let result = NSString(data: responseData as NSData, encoding: NSASCIIStringEncoding) as String
         
         let pictureURL = result.pictureUrlFromNASAHtmlContent()
-        
-        
             return result
         }
         
         return signal
     }
-    
-//    class func startDownloadingFrontPage() -> RACSignal {
-//        let signal = getAstronomyHTMLPage(nasaURL).deliverOnMainThread().map { (responseData) -> AnyObject! in
-//            let result = NSString(data: responseData as NSData, encoding: NSASCIIStringEncoding)
-//            println(result)
-//            
-//            return result
-//            
-//        }
-//            
-//        
-//        return signal
-//    }
-    
 }

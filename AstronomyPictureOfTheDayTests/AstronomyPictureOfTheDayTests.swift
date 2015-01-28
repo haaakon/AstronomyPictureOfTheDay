@@ -16,9 +16,9 @@ class AstronomyPictureOfTheDayTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
-    
-    
-    
+    override func tearDown() {
+        super.tearDown()
+    }
     
     func jsonDictionaryFromFile(filename: String) -> Dictionary<String, AnyObject> {
         let testBundle = NSBundle(forClass: AstronomyPictureOfTheDayTests.self)
@@ -42,49 +42,11 @@ class AstronomyPictureOfTheDayTests: XCTestCase {
         XCTAssertNil(error, "could not read json")
         return data!
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-//    
-//    it(@"logins successfully", ^{
-//    __block id success = @0;
-//    void (^theBlock)(NSInvocation *) = ^(NSInvocation *invocation) {
-//    void (^passedBlock)( BOOL );
-//    [invocation getArgument:&passedBlock atIndex:4];
-//    passedBlock(YES);
-//    };
-//    [[[mock stub] andDo:theBlock] authenticateWithUserName:[OCMArg any] password:[OCMArg any] completion:[OCMArg any]];
-//    
-//    [[FRPPhotoImporter logInWithUsername:@"username" password:@"password"] subscribeCompleted:^{
-//    success = @1;
-//    }];
-//    expect(success).to.equal(@1);
-//    });
-    
-    
-    
-//    describe(@"FRPPhotoImporter_ImportPhotos", ^{
-//    it(@"requests popular photo data", ^{
-//    id mock = [OCMockObject mockForClass:[NSURLConnection class]];
-//    __block id resultData;
-//    RACSignal *stubAsyn = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-//    [subscriber sendNext:RACTuplePack(nil, [NSData data])];
-//    return nil;
-//    }];
-//    [[[mock stub] andReturn:stubAsyn] rac_sendAsynchronousRequest:[OCMArg any]];
-//    
-//    [[FRPPhotoImporter requestPhotoData] subscribeNext:^(id x) {
-//    resultData = x;
-//    }];
-//    expect(resultData).to.equal([NSData data]);
-//    });
-//    });
-    
+   
+
     func testParseFrontPage() {
         
-        let asignal = PictureImporter.importAstronomyPhotos(Constants.API.nasaBaseURL, startNow: false)
+        let asignal = PictureImporter.importAstronomyPhotoMetaData(Constants.API.nasaBaseURL, startImmediately: true)
         NSFileManager.defaultManager()
         
         let htmlContent = dataFromFile("exampleFrontPage.html")
@@ -94,7 +56,6 @@ class AstronomyPictureOfTheDayTests: XCTestCase {
         }
         
         PictureImporter.sharedPictureImporter.subscriber?.sendNext(htmlContent)
-//        waitForExpectationsWithTimeout(40, nil)
         
     }
     

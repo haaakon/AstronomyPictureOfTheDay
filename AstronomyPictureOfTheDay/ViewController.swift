@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PictureImporter.importAstronomyPhotos(Constants.API.nasaBaseURL, startNow: true).subscribeNext { (stuff) -> Void in
+        PictureImporter.importAstronomyPhotoMetaData(Constants.API.nasaBaseURL, startImmediately: true).subscribeNext { (stuff) -> Void in
             println(stuff)
         }
         

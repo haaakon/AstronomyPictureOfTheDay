@@ -10,7 +10,6 @@ import Foundation
 
 struct Constants {
     
-    
     struct API {
         static let nasaBaseURL: NSURL = NSURL(string: "http://apod.nasa.gov/apod")!
     }
