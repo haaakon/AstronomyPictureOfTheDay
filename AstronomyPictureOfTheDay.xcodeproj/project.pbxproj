@@ -21,6 +21,12 @@
 		EC780F351A797DCE00C8CC34 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC780F321A797DCD00C8CC34 /* DataModel.xcdatamodeld */; };
 		EC780F371A797E5100C8CC34 /* AstronomyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F361A797E5100C8CC34 /* AstronomyItem.swift */; };
 		EC780F381A797E5100C8CC34 /* AstronomyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F361A797E5100C8CC34 /* AstronomyItem.swift */; };
+		EC780F3A1A7980EA00C8CC34 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F391A7980EA00C8CC34 /* NSDate+Extension.swift */; };
+		EC780F3B1A7980EA00C8CC34 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F391A7980EA00C8CC34 /* NSDate+Extension.swift */; };
+		EC780F3E1A79825300C8CC34 /* AstronomyItem+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F3D1A79825300C8CC34 /* AstronomyItem+Methods.swift */; };
+		EC780F3F1A79825300C8CC34 /* AstronomyItem+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F3D1A79825300C8CC34 /* AstronomyItem+Methods.swift */; };
+		EC780F411A7985A200C8CC34 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F401A7985A200C8CC34 /* ModelManager.swift */; };
+		EC780F421A7985A200C8CC34 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC780F401A7985A200C8CC34 /* ModelManager.swift */; };
 		EC84D5E41A783B4F0083E6CF /* PictureImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03268A1A7815DF00EA346F /* PictureImporter.swift */; };
 		EC8C12F91A78293F00665A3E /* String+HTMLParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */; };
 		EC8C12FA1A78293F00665A3E /* String+HTMLParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */; };
@@ -60,6 +66,9 @@
 		EC03268F1A781A5700EA346F /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		EC780F331A797DCE00C8CC34 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		EC780F361A797E5100C8CC34 /* AstronomyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyItem.swift; sourceTree = "<group>"; };
+		EC780F391A7980EA00C8CC34 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extension.swift"; path = "AstronomyPictureOfTheDayTests/NSDate+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		EC780F3D1A79825300C8CC34 /* AstronomyItem+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AstronomyItem+Methods.swift"; sourceTree = "<group>"; };
+		EC780F401A7985A200C8CC34 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		EC8C12F71A78293E00665A3E /* AstronomyPictureOfTheDayTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AstronomyPictureOfTheDayTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HTMLParsing.swift"; sourceTree = "<group>"; };
 		EC8C12FB1A78325B00665A3E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -130,8 +139,10 @@
 				EC03266A1A78153200EA346F /* AppDelegate.swift */,
 				EC03266C1A78153200EA346F /* ViewController.swift */,
 				EC8C12FB1A78325B00665A3E /* Constants.swift */,
+				EC780F3C1A79810100C8CC34 /* Extensions */,
 				EC03268A1A7815DF00EA346F /* PictureImporter.swift */,
-				EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */,
+				EC780F401A7985A200C8CC34 /* ModelManager.swift */,
+				EC780F3D1A79825300C8CC34 /* AstronomyItem+Methods.swift */,
 				EC03266E1A78153200EA346F /* Main.storyboard */,
 				EC03268E1A781A5700EA346F /* test.h */,
 				EC03268F1A781A5700EA346F /* test.m */,
@@ -169,6 +180,15 @@
 				EC03267F1A78153300EA346F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC780F3C1A79810100C8CC34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC780F391A7980EA00C8CC34 /* NSDate+Extension.swift */,
+				EC8C12F81A78293F00665A3E /* String+HTMLParsing.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,9 +361,12 @@
 			files = (
 				EC03266D1A78153200EA346F /* ViewController.swift in Sources */,
 				EC780F371A797E5100C8CC34 /* AstronomyItem.swift in Sources */,
+				EC780F3E1A79825300C8CC34 /* AstronomyItem+Methods.swift in Sources */,
 				EC0326901A781A5700EA346F /* test.m in Sources */,
+				EC780F3A1A7980EA00C8CC34 /* NSDate+Extension.swift in Sources */,
 				EC8C12F91A78293F00665A3E /* String+HTMLParsing.swift in Sources */,
 				EC780F341A797DCE00C8CC34 /* DataModel.xcdatamodeld in Sources */,
+				EC780F411A7985A200C8CC34 /* ModelManager.swift in Sources */,
 				EC03268B1A7815DF00EA346F /* PictureImporter.swift in Sources */,
 				EC03266B1A78153200EA346F /* AppDelegate.swift in Sources */,
 				EC8C12FC1A78325B00665A3E /* Constants.swift in Sources */,
@@ -354,12 +377,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC780F3F1A79825300C8CC34 /* AstronomyItem+Methods.swift in Sources */,
 				EC8C12FA1A78293F00665A3E /* String+HTMLParsing.swift in Sources */,
 				EC780F351A797DCE00C8CC34 /* DataModel.xcdatamodeld in Sources */,
 				EC0326811A78153300EA346F /* AstronomyPictureOfTheDayTests.swift in Sources */,
 				EC84D5E41A783B4F0083E6CF /* PictureImporter.swift in Sources */,
+				EC780F421A7985A200C8CC34 /* ModelManager.swift in Sources */,
 				EC8C12FD1A78325B00665A3E /* Constants.swift in Sources */,
 				EC780F381A797E5100C8CC34 /* AstronomyItem.swift in Sources */,
+				EC780F3B1A7980EA00C8CC34 /* NSDate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +509,8 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = astronomy;
+				MODULE_NAME = AstronomyPictureOfTheDay;
+				PRODUCT_MODULE_NAME = AstronomyPictureOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPictureOfTheDay/AstronomyPictureOfTheDay-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -499,7 +526,8 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = astronomy;
+				MODULE_NAME = AstronomyPictureOfTheDay;
+				PRODUCT_MODULE_NAME = AstronomyPictureOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPictureOfTheDay/AstronomyPictureOfTheDay-Bridging-Header.h";
 			};
