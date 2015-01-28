@@ -45,16 +45,12 @@ class AstronomyPictureOfTheDayTests: XCTestCase {
    
 
     func testParseFrontPage() {
-        
-        let asignal = PictureImporter.importAstronomyPhotoMetaData(Constants.API.nasaBaseURL, startImmediately: true)
-        NSFileManager.defaultManager()
-        
+        let signal = PictureImporter.importAstronomyPhotoMetaData(date: NSDate(), startImmediately: true)
         let htmlContent = dataFromFile("exampleFrontPage.html")
-        
-        asignal.subscribeNext { (response) -> Void in
-            println(response)
+        signal.subscribeNext { (response) -> Void in
+            let astronomyItem = response as AstronomyItem
+            XCTAssertNotNil(astronomyItem, "could not create astronomy item from date and html")
         }
-        
         PictureImporter.sharedPictureImporter.subscriber?.sendNext(htmlContent)
         
     }

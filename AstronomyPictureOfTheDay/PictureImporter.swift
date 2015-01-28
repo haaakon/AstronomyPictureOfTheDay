@@ -40,6 +40,7 @@ class PictureImporter: NSObject {
                     subscriber.sendNext(data)
                 }
             })
+            
             if (startImmediately) {
                 task.resume()
             }
@@ -59,14 +60,34 @@ class PictureImporter: NSObject {
     
     :returns: signal with models
     */
-    class func importAstronomyPhotoMetaData(url: NSURL, startImmediately: Bool) -> RACSignal {
-       let signal = signalForUrlRequest(url,startImmediately: startImmediately).map { (responseData) -> AnyObject! in
-        let result = NSString(data: responseData as NSData, encoding: NSASCIIStringEncoding) as String
-        
-        let pictureURL = result.pictureUrlFromNASAHtmlContent()
-            return result
+
+    class func importAstronomyPhotoMetaData(#date: NSDate, startImmediately: Bool) -> RACSignal {
+        let url = NSURL(string: "")!
+        let signal = signalForUrlRequest(url,startImmediately: startImmediately).map { (responseData) -> AnyObject! in
+            let parsedHTML = NSString(data: responseData as NSData, encoding: NSASCIIStringEncoding) as String
+//            
+//            let pictureURL = result.pictureUrlFromNASAHtmlContent()
+//            let description = result.descriptionFromNASAHTMLContent()
+//            let astronomyItem = AstronomyItem(date: date, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
+            let astronomyItem = AstronomyItem(date: date, sourceHTML: parsedHTML, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
+            
+            return astronomyItem
         }
         
         return signal
     }
+    
+    
+    
+//    for index in 1...20 {
+//    date = date.dateBySubtractingDays(1)
+//    let astronomyPicture = Picture.astronomyPictureForDate(date: date, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
+//    reflect(astronomyPicture).count
+//    let dict = astronomyPicture.dictionaryOfAttributes()
+//    self.astronomyPictures.append(astronomyPicture)
+//    let url = astronomyPicture.url()
+//    println(date)
+//    }
+    //        let tableViewDatasource = PictureListDataSource()
+    //        tableView.dataSource = tableViewDataSource
 }
