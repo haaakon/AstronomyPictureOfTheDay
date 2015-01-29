@@ -51,6 +51,5 @@ class AstronomyItem: NSManagedObject {
             astronomyItem = results.firstObject as AstronomyItem!
             self.date = astronomyItem!.date
         }
-        
     }
 }

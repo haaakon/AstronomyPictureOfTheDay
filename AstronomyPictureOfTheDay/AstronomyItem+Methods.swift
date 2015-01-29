@@ -22,7 +22,7 @@ extension AstronomyItem {
         return fullstring
     }
     
-    class func astronomyPictures(#fromDate: NSDate, toDate: NSDate, managedObjectContext: NSManagedObjectContext) -> Array<AstronomyItem> {
+    class func astronomyItems(#fromDate: NSDate, toDate: NSDate, managedObjectContext: NSManagedObjectContext) -> Array<AstronomyItem> {
         let entityDescription = NSEntityDescription.entityForName("Picture", inManagedObjectContext: managedObjectContext)
         let fetchRequest = NSFetchRequest()
         fetchRequest.predicate = NSPredicate(format: "date >= %@ and date <= %@", fromDate.startOfDay(),toDate.endOfDay())

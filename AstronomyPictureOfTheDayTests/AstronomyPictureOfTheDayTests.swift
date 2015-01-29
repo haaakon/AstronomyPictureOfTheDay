@@ -56,4 +56,8 @@ class AstronomyPictureOfTheDayTests: XCTestCase {
         PictureImporter.sharedPictureImporter.subscriber?.sendNext(htmlContent)
     }
     
+    func testParseMultiplePages() {
+        
+    }
+    
 }

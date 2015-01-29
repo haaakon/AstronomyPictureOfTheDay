@@ -10,23 +10,12 @@ import UIKit
 
 class AstronomyItemsViewController: UIViewController {
 
-//    private let astronomyItemsViewModel = AstronomyItemsViewModel()
+    private let astronomyItemsViewModel = AstronomyItemsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PictureImporter.importAstronomyPhotoMetaData(date:NSDate(), startImmediately: true).subscribeNext { (stuff) -> Void in
-            println(stuff)
-        }
+        PictureImporter.importAstronomyPhotosMetaData(fromDate: NSDate(), toDate: NSDate().dateBySubtractingDays(10), startImmediately: true)
         
-        // Do any additional setup after loading the view, typically from a nib.
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-}
-

@@ -66,16 +66,21 @@ class PictureImporter: NSObject {
         let url = NSURL(string: "")!
         let signal = signalForUrlRequest(url,startImmediately: startImmediately).map { (responseData) -> AnyObject! in
             let parsedHTML = NSString(data: responseData as NSData, encoding: NSASCIIStringEncoding) as String
-//            
-//            let astronomyItem = AstronomyItem(date: date, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
             let astronomyItem = AstronomyItem(date: date, sourceHTML: parsedHTML, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
-            
             return astronomyItem
         }
-        
         return signal
     }
     
+    class func importAstronomyPhotosMetaData(#fromDate: NSDate, toDate: NSDate, startImmediately: Bool) -> RACSignal {
+        let url = NSURL(string: "")!
+        let signal = signalForUrlRequest(url,startImmediately: startImmediately).map { (responseData) -> AnyObject! in
+            let parsedHTML = NSString(data: responseData as NSData, encoding: NSASCIIStringEncoding) as String
+            let astronomyItems = AstronomyItem.astronomyItems(fromDate: fromDate, toDate: toDate, managedObjectContext: ModelManager.sharedInstance.managedObjectContext!)
+            return astronomyItems
+        }
+        return signal
+    }   
     
     
 //    for index in 1...20 {

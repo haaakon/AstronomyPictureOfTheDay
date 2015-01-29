@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class AstronomyItemsViewModel {
+    let astronomyItems : Array<AstronomyItem>?
+    init() {
+        
+    }
+//    init() {
+    
+//       self.astronomyItems = PictureImporter.importAstronomyPhotosMetaData(fromDate: NSDate().dateBySubtractingDays(10), toDate: NSDate(), startImmediately: true)
+        
+//    }
+    
+}
