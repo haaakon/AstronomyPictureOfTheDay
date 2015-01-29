@@ -21,4 +21,25 @@ extension AstronomyItem {
         let fullstring = String(format: "http://apod.nasa.gov/apod/ap%@.html", dateString)
         return fullstring
     }
+    
+    class func astronomyPictures(#fromDate: NSDate, toDate: NSDate, managedObjectContext: NSManagedObjectContext) -> Array<AstronomyItem> {
+        let entityDescription = NSEntityDescription.entityForName("Picture", inManagedObjectContext: managedObjectContext)
+        let fetchRequest = NSFetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "date >= %@ and date <= %@", fromDate.startOfDay(),toDate.endOfDay())
+        
+        fetchRequest.entity = entityDescription
+        var error : NSError?
+        
+        let results : NSArray = managedObjectContext.executeFetchRequest(fetchRequest, error: &error)!
+        
+        if (error != nil) {
+            
+        }
+        
+        if (results.count == 0) {
+            return Array<AstronomyItem>()
+        } else {
+            return results as Array<AstronomyItem>
+        }
+    }
 }

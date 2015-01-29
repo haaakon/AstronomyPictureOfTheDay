@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AstronomyItemsViewController: UIViewController {
 
+//    private let astronomyItemsViewModel = AstronomyItemsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

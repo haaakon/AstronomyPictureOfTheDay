@@ -32,12 +32,12 @@ class AstronomyItemsDataSource: NSObject, UITableViewDataSource {
     }
     
     private lazy var fetchedResultController : NSFetchedResultsController = {
-        let fetchRequest = NSFetchRequest(entityName: <#entityName#>)
-        let sortDescriptor = NSSortDescriptor(key: <#key#>, ascending: <#isAscending#>)
+        let fetchRequest = NSFetchRequest(entityName: "AstronomyItem")
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
-        
-        var controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext:<#managedObjectContext#>, sectionNameKeyPath: nil, cacheName: nil)
-        
+//
+        var controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext:ModelManager.sharedInstance.managedObjectContext!, sectionNameKeyPath: nil, cacheName: nil)
+//
         return controller
         }()
     

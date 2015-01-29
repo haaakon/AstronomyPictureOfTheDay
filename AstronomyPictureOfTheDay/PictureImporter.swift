@@ -52,6 +52,7 @@ class PictureImporter: NSObject {
         return signal
     }
     
+    
     /**
     parses HTML and creates models based on the data
     
